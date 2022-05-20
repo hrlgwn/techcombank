@@ -1,13 +1,86 @@
 // fonts
 @font-face {
-    font-family: "SF Pro Display";
+    font-family: "SF Pro Display Regular";
     src: url(../fonts/SF-Pro-Display-Regular.otf);
 }
+
+@font-face {
+    font-family: "SF Pro Display Bold";
+    src: url(../fonts/SF-Pro-Display-Bold.otf);
+}
+
+@font-face {
+    font-family: "SF Pro Display Light";
+    src: url(../fonts/SF-Pro-Display-Light.otf);
+}
+
+@font-face {
+    font-family: "SF Pro Display Semibold";
+    src: url(../fonts/SF-Pro-Display-Semibold.otf);
+}
+
 
 // fonts
 .tcb-container {
     max-width: 1440px;
 }
+
+.tcb-header {
+    display: flex;
+    margin-bottom: 36px;
+
+    &--discover {
+        padding-left: 65px;
+    }
+
+    &--endow {
+        margin-bottom: 26px;
+        padding-left: 65px;
+    }
+
+    &--help {
+        padding-left: 69px;
+        margin-bottom: -15px;
+    }
+
+    &__title {
+        font-family: "SF Pro Display Light";
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 60px;
+        letter-spacing: -0.7px;
+
+        &--help {
+            letter-spacing: 0px;
+        }
+    }
+
+    &__subtitle {
+        font-family: "SF Pro Display Bold";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-top: 21px;
+        margin-left: 28.6px;
+        letter-spacing: 0.1px;
+        color: #000000;
+    }
+
+    &__separate {
+        width: 1px;
+        background: #000000;
+        height: 31px;
+        margin-left: 33px;
+        margin-top: 16px;
+    }
+
+    &__icon {
+        margin-top: 18px;
+        margin-left: 24px;
+    }
+}
+
+
 
 // header
 .header {
@@ -22,7 +95,6 @@
     background: #fff;
     width: 100%;
     top: 0;
-    box-shadow: -2px 2px 5px 0 #3333336e;
     z-index: 8000;
 
     &__container {
@@ -78,3 +150,226 @@
 }
 
 // header
+
+// hero
+.tcb-hero {
+    position: relative;
+
+    img {
+        max-width: 100%;
+    }
+
+}
+
+.account {
+    position: absolute;
+    bottom: 0;
+
+}
+
+.btn-account {
+    border-radius: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 1px solid #FFFFFF;
+    border-bottom: 0;
+    font-family: "SF Pro Display Bold";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #FFFFFF;
+    height: 58px;
+    width: 291px;
+    margin-left: 146px;
+    display: flex;
+
+    &__icon {
+        margin-left: 85px;
+        margin-top: 21px;
+    }
+
+    &__title {
+        margin-top: 12px;
+        margin-left: 11px;
+        letter-spacing: 0.3px;
+    }
+}
+
+// hero
+
+// features
+.tcb-features {
+    padding-top: 54px;
+    padding-bottom: 49px;
+}
+
+.feature {
+    padding-left: 65px;
+    padding-right: 42px;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__title {
+        font-family: "SF Pro Display Regular";
+        font-size: 24px;
+        font-weight: 400;
+
+        &--1 {
+            margin-top: 12px;
+            margin-bottom: 18px;
+        }
+
+        &--2 {
+            margin-top: 3px;
+            margin-bottom: 19px;
+            position: relative;
+            margin-left: -15px;
+
+            &::after {
+                content: "";
+                height: 1px;
+                background: #DE1C24;
+                width: 43px;
+                position: absolute;
+                left: calc(50% - 21.5px);
+                bottom: -9px;
+            }
+        }
+
+        &--3 {
+            margin-top: 4px;
+            margin-bottom: 17px;
+        }
+    }
+
+    &__icon {
+        &--3 {
+            margin-top: -17px;
+        }
+    }
+
+    &__subtitle {
+        font-family: "SF Pro Display Regular";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+
+        &--2 {
+            margin-left: -15px;
+        }
+    }
+}
+
+// features
+
+// discover
+.tcb-discover {
+    background: #F7F6F3;
+    padding-top: 51px;
+    padding-bottom: 39px;
+}
+
+.discover {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 24px;
+        padding-left: 22px;
+        padding-right: 31px;
+    }
+
+    &__title {
+        font-family: "SF Pro Display Semibold";
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+        letter-spacing: 1px;
+        margin-bottom: 22px;
+    }
+
+    &__text {
+        font-family: "SF Pro Display Regular";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__body {
+        padding: 22px 33px;
+    }
+
+    &__card {
+        height: 424px;
+        border: 0;
+    }
+}
+
+// discover
+
+
+// tcb-help
+.help {
+    width: 876px;
+    margin-left: auto;
+    padding-right: 99px;
+
+    &__link {
+        font-family: "SF Pro Display Regular";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #000000;
+    }
+}
+
+// tcb-help
+
+// tcb-endow
+.tcb-endow {
+    padding-top: 31px;
+}
+
+.endow {
+    position: relative;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 612px;
+        grid-gap: 43px;
+    }
+
+    &__title {
+        font-family: "SF Pro Display Regular";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #4D4D4D;
+        margin-top: 14px;
+    }
+
+    &__img {
+        position: absolute;
+        top: 28px;
+        left: -15px;
+    }
+}
+
+// tcb-endow
+
+// footer
+.footer {
+    background: #212121;
+}
+
+// footer

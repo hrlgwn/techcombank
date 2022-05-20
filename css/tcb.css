@@ -1,10 +1,82 @@
 @font-face {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display Regular";
   src: url(../fonts/SF-Pro-Display-Regular.otf);
+}
+
+@font-face {
+  font-family: "SF Pro Display Bold";
+  src: url(../fonts/SF-Pro-Display-Bold.otf);
+}
+
+@font-face {
+  font-family: "SF Pro Display Light";
+  src: url(../fonts/SF-Pro-Display-Light.otf);
+}
+
+@font-face {
+  font-family: "SF Pro Display Semibold";
+  src: url(../fonts/SF-Pro-Display-Semibold.otf);
 }
 
 .tcb-container {
   max-width: 1440px;
+}
+
+.tcb-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.tcb-header--discover {
+  padding-left: 65px;
+}
+
+.tcb-header--endow {
+  margin-bottom: 26px;
+  padding-left: 65px;
+}
+
+.tcb-header--help {
+  padding-left: 69px;
+  margin-bottom: -15px;
+}
+
+.tcb-header__title {
+  font-family: "SF Pro Display Light";
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 60px;
+  letter-spacing: -0.7px;
+}
+
+.tcb-header__title--help {
+  letter-spacing: 0px;
+}
+
+.tcb-header__subtitle {
+  font-family: "SF Pro Display Bold";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 21px;
+  margin-left: 28.6px;
+  letter-spacing: 0.1px;
+  color: #000000;
+}
+
+.tcb-header__separate {
+  width: 1px;
+  background: #000000;
+  height: 31px;
+  margin-left: 33px;
+  margin-top: 16px;
+}
+
+.tcb-header__icon {
+  margin-top: 18px;
+  margin-left: 24px;
 }
 
 .header {
@@ -26,8 +98,6 @@
   background: #fff;
   width: 100%;
   top: 0;
-  -webkit-box-shadow: -2px 2px 5px 0 #3333336e;
-          box-shadow: -2px 2px 5px 0 #3333336e;
   z-index: 8000;
 }
 
@@ -88,5 +158,211 @@
 .login1__icon {
   height: 16px;
   width: 16px;
+}
+
+.tcb-hero {
+  position: relative;
+}
+
+.tcb-hero img {
+  max-width: 100%;
+}
+
+.account {
+  position: absolute;
+  bottom: 0;
+}
+
+.btn-account {
+  border-radius: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid #FFFFFF;
+  border-bottom: 0;
+  font-family: "SF Pro Display Bold";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #FFFFFF;
+  height: 58px;
+  width: 291px;
+  margin-left: 146px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-account__icon {
+  margin-left: 85px;
+  margin-top: 21px;
+}
+
+.btn-account__title {
+  margin-top: 12px;
+  margin-left: 11px;
+  letter-spacing: 0.3px;
+}
+
+.tcb-features {
+  padding-top: 54px;
+  padding-bottom: 49px;
+}
+
+.feature {
+  padding-left: 65px;
+  padding-right: 42px;
+}
+
+.feature__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0;
+}
+
+.feature__item {
+  text-align: center;
+}
+
+.feature__title {
+  font-family: "SF Pro Display Regular";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.feature__title--1 {
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+
+.feature__title--2 {
+  margin-top: 3px;
+  margin-bottom: 19px;
+  position: relative;
+  margin-left: -15px;
+}
+
+.feature__title--2::after {
+  content: "";
+  height: 1px;
+  background: #DE1C24;
+  width: 43px;
+  position: absolute;
+  left: calc(50% - 21.5px);
+  bottom: -9px;
+}
+
+.feature__title--3 {
+  margin-top: 4px;
+  margin-bottom: 17px;
+}
+
+.feature__icon--3 {
+  margin-top: -17px;
+}
+
+.feature__subtitle {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.feature__subtitle--2 {
+  margin-left: -15px;
+}
+
+.tcb-discover {
+  background: #F7F6F3;
+  padding-top: 51px;
+  padding-bottom: 39px;
+}
+
+.discover__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+  padding-left: 22px;
+  padding-right: 31px;
+}
+
+.discover__title {
+  font-family: "SF Pro Display Semibold";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+}
+
+.discover__text {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.discover__body {
+  padding: 22px 33px;
+}
+
+.discover__card {
+  height: 424px;
+  border: 0;
+}
+
+.help {
+  width: 876px;
+  margin-left: auto;
+  padding-right: 99px;
+}
+
+.help__link {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+}
+
+.tcb-endow {
+  padding-top: 31px;
+}
+
+.endow {
+  position: relative;
+}
+
+.endow__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding-left: 612px;
+  grid-gap: 43px;
+}
+
+.endow__title {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #4D4D4D;
+  margin-top: 14px;
+}
+
+.endow__img {
+  position: absolute;
+  top: 28px;
+  left: -15px;
+}
+
+.footer {
+  background: #212121;
 }
 /*# sourceMappingURL=tcb.css.map */
