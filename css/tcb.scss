@@ -1,0 +1,80 @@
+// fonts
+@font-face {
+    font-family: "SF Pro Display";
+    src: url(../fonts/SF-Pro-Display-Regular.otf);
+}
+
+// fonts
+.tcb-container {
+    max-width: 1440px;
+}
+
+// header
+.header {
+    background: #FFFFFF;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    transition: all .25s ease-in-out;
+    background: #fff;
+    width: 100%;
+    top: 0;
+    box-shadow: -2px 2px 5px 0 #3333336e;
+    z-index: 8000;
+
+    &__container {
+        padding-left: 56px;
+        padding-right: 48px;
+        height: 72px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        img {
+            width: 232px;
+            height: 32px;
+        }
+    }
+
+    &__right {
+        display: flex;
+        height: 100%;
+    }
+
+    &__hotline {
+        align-self: center;
+    }
+
+    &__login {
+        width: 169px;
+        height: 72px;
+    }
+}
+
+.login1 {
+    background: #ED1C24;
+    padding: 24px 16px;
+
+    &__title {
+        font-family: "SF Pro Display";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__icon {
+        height: 16px;
+        width: 16px;
+    }
+}
+
+// header
