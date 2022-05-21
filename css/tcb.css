@@ -42,7 +42,6 @@
 .tcb-header--help {
   padding-left: 69px;
   margin-bottom: -15px;
-  margin-top: 47px;
 }
 
 .tcb-header__title {
@@ -320,14 +319,20 @@
   border: 0;
 }
 
-.help-1 {
+.tcb-help {
+  padding-top: 47px;
+  padding-bottom: 84px;
+  background: #F5F5F5;
+}
+
+.container-help-1 {
   position: relative;
 }
 
 .help-banner-1 {
   position: absolute;
   left: -15px;
-  top: 61px;
+  top: 55px;
 }
 
 .help-banner-1__img {
@@ -344,15 +349,42 @@
 
 .accordion-help-1__link {
   padding: 0;
-  font-family: "SF Pro Display Regular";
+  font-family: "SF Pro Display Bold";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #000000;
+  letter-spacing: -0.3px;
+  text-decoration: none;
+}
+
+.accordion-help-1__link:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+}
+
+.accordion-help-1__link:hover {
+  color: #000000;
+  text-decoration: none;
 }
 
 .accordion-help-1__header {
   padding: 12.5px 0;
+  border: 0;
+  background: transparent;
+}
+
+.accordion-help-1__body {
+  padding: 0;
+  padding-top: 4px;
+  padding-bottom: 19px;
+}
+
+.accordion-help-1__card {
+  border: 0;
+  border-bottom: 1px solid #E3E4E6 !important;
+  background: transparent;
 }
 
 .btn-help-1 {
@@ -360,11 +392,38 @@
   display: -ms-flexbox;
   display: flex;
   border: 1px solid #404040;
+  margin-left: 89px;
+  margin-top: 40px;
+  border-radius: 10px;
+  width: 160px;
+  height: 43px;
+  padding: 0;
+}
+
+.btn-help-1__title {
+  font-family: "SF Pro Display Bold";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-left: 17px;
+  margin-top: 9px;
 }
 
 .btn-help-1__icon {
-  height: 11.38px;
-  width: 12px;
+  height: 18px;
+  width: 18px;
+  margin-top: 9px;
+  margin-left: 13px;
+}
+
+.icon-help-1 {
+  margin-top: 11px;
+  margin-left: 2px;
+}
+
+.icon-help-1 img {
+  width: 24px;
+  height: 24px;
 }
 
 .endow-1 {
@@ -449,6 +508,8 @@
 
 .footer {
   background: #212121;
+  padding: 48px 0;
+  padding-left: 49px;
 }
 
 .footer-logo-1__img {
@@ -465,6 +526,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-right: 52px;
 }
 
 .footer-location-1:hover {
@@ -474,6 +539,37 @@
 .footer-location-1__icon {
   width: 14.91px;
   height: 9.44px;
+  margin-top: 7px;
+  margin-left: 10px;
+}
+
+.footer-social-1__title {
+  color: #A2A2A2;
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 23px;
+  margin-right: 49px;
+}
+
+.footer-social-1__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-right: 47px;
+  margin-top: 12px;
+}
+
+.footer-social-1__link {
+  margin-left: 21px;
 }
 
 .footer-social-1__img--fb {
@@ -494,5 +590,12 @@
 .footer-social-1__img--zalo {
   height: 32px;
   width: 32px;
+}
+
+.footer-line-1 {
+  height: 3px;
+  background: #333333;
+  margin-right: 46px;
+  margin-top: 48px;
 }
 /*# sourceMappingURL=tcb.css.map */
