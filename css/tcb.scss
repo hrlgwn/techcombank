@@ -80,8 +80,6 @@
     }
 }
 
-
-
 // header
 .header {
     background: #FFFFFF;
@@ -129,7 +127,7 @@
     }
 }
 
-.login1 {
+.login-1 {
     background: #ED1C24;
     padding: 24px 16px;
 
@@ -161,13 +159,13 @@
 
 }
 
-.account {
+.hero-1 {
     position: absolute;
     bottom: 0;
 
 }
 
-.btn-account {
+.btn-hero-1 {
     border-radius: 0;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -203,7 +201,7 @@
     padding-bottom: 49px;
 }
 
-.feature {
+.feature-1 {
     padding-left: 65px;
     padding-right: 42px;
 
@@ -277,7 +275,7 @@
     padding-bottom: 39px;
 }
 
-.discover {
+.discover-1 {
     &__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -285,7 +283,9 @@
         padding-left: 22px;
         padding-right: 31px;
     }
+}
 
+.discover-card-1 {
     &__title {
         font-family: "SF Pro Display Semibold";
         font-size: 14px;
@@ -316,7 +316,20 @@
 
 
 // tcb-help
-.help {
+.help-1 {
+    position: relative;
+}
+
+.help-banner-1 {
+    position: absolute;
+
+    &__img {
+        height: 257px;
+        width: 485px;
+    }
+}
+
+.help-accordion-1 {
     width: 876px;
     margin-left: auto;
     padding-right: 99px;
@@ -330,6 +343,16 @@
     }
 }
 
+.btn-help-1 {
+    display: flex;
+    border: 1px solid #404040;
+
+    &__icon {
+        height: 11.38px;
+        width: 12px;
+    }
+}
+
 // tcb-help
 
 // tcb-endow
@@ -337,7 +360,7 @@
     padding-top: 31px;
 }
 
-.endow {
+.endow-1 {
     position: relative;
 
     &__list {
@@ -365,11 +388,85 @@
     }
 }
 
+.endow-banner-1 {
+    img {
+        max-width: 100%;
+    }
+}
+
+.endow-bg-1 {
+    background: url(../images/endow-bg-1.png);
+    height: 968px;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 0;
+}
+
+.endow-container {
+    // position: relative;
+    background: url(../images/endow-bg-1.png);
+    height: 968px;
+    background-size: cover;
+    background-position: bottom;
+    // position: absolute;
+    // top: 0;
+}
+
 // tcb-endow
 
 // footer
 .footer {
     background: #212121;
+}
+
+.footer-logo-1 {
+    &__img {
+        height: 41px;
+        width: 288px;
+    }
+}
+
+.footer-location-1 {
+    font-family: "SF Pro Display Bold";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #FFFFFF;
+    display: flex;
+
+    &:hover {
+        color: #FFFFFF;
+    }
+
+    &__icon {
+        width: 14.91px;
+        height: 9.44px;
+    }
+}
+
+.footer-social-1 {
+    &__img {
+        &--fb {
+            height: 31.81px;
+            width: 32px;
+        }
+
+        &--in {
+            height: 32px;
+            width: 32px;
+        }
+
+        &--ytb {
+            height: 32px;
+            width: 32px;
+        }
+
+        &--zalo {
+            height: 32px;
+            width: 32px;
+        }
+    }
 }
 
 // footer
