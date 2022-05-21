@@ -36,11 +36,13 @@
 .tcb-header--endow {
   margin-bottom: 26px;
   padding-left: 65px;
+  margin-top: 31px;
 }
 
 .tcb-header--help {
   padding-left: 69px;
   margin-bottom: -15px;
+  margin-top: 47px;
 }
 
 .tcb-header__title {
@@ -289,6 +291,10 @@
   padding-right: 31px;
 }
 
+.discover-card-1 {
+  height: 424px;
+}
+
 .discover-card-1__title {
   font-family: "SF Pro Display Semibold";
   font-size: 14px;
@@ -320,6 +326,8 @@
 
 .help-banner-1 {
   position: absolute;
+  left: -15px;
+  top: 61px;
 }
 
 .help-banner-1__img {
@@ -327,18 +335,24 @@
   width: 485px;
 }
 
-.help-accordion-1 {
-  width: 876px;
+.accordion-help-1 {
+  width: 739.03px;
   margin-left: auto;
-  padding-right: 99px;
+  margin-right: 106px;
+  margin-top: 6px;
 }
 
-.help-accordion-1__link {
+.accordion-help-1__link {
+  padding: 0;
   font-family: "SF Pro Display Regular";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #000000;
+}
+
+.accordion-help-1__header {
+  padding: 12.5px 0;
 }
 
 .btn-help-1 {
@@ -351,10 +365,6 @@
 .btn-help-1__icon {
   height: 11.38px;
   width: 12px;
-}
-
-.tcb-endow {
-  padding-top: 31px;
 }
 
 .endow-1 {
@@ -387,6 +397,12 @@
   left: -15px;
 }
 
+.endow-banner-1 {
+  padding-left: 16px;
+  padding-right: 17px;
+  margin-top: -11px;
+}
+
 .endow-banner-1 img {
   max-width: 100%;
 }
@@ -405,6 +421,30 @@
   height: 968px;
   background-size: cover;
   background-position: bottom;
+}
+
+.btn-endow-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  border: 0;
+  margin-top: 9px;
+  background: transparent;
+}
+
+.btn-endow-1__title {
+  font-family: "SF Pro Display Bold";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.btn-endow-1__icon {
+  height: 15.17px;
+  width: 16px;
+  margin-left: 16px;
+  margin-top: 2px;
 }
 
 .footer {

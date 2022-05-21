@@ -36,11 +36,13 @@
     &--endow {
         margin-bottom: 26px;
         padding-left: 65px;
+        margin-top: 31px;
     }
 
     &--help {
         padding-left: 69px;
         margin-bottom: -15px;
+        margin-top: 47px;
     }
 
     &__title {
@@ -283,9 +285,12 @@
         padding-left: 22px;
         padding-right: 31px;
     }
+
 }
 
 .discover-card-1 {
+    height: 424px;
+
     &__title {
         font-family: "SF Pro Display Semibold";
         font-size: 14px;
@@ -322,6 +327,8 @@
 
 .help-banner-1 {
     position: absolute;
+    left: -15px;
+    top: 61px;
 
     &__img {
         height: 257px;
@@ -329,17 +336,23 @@
     }
 }
 
-.help-accordion-1 {
-    width: 876px;
+.accordion-help-1 {
+    width: 739.03px;
     margin-left: auto;
-    padding-right: 99px;
+    margin-right: 106px;
+    margin-top: 6px;
 
     &__link {
+        padding: 0;
         font-family: "SF Pro Display Regular";
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
         color: #000000;
+    }
+
+    &__header {
+        padding: 12.5px 0;
     }
 }
 
@@ -356,9 +369,7 @@
 // tcb-help
 
 // tcb-endow
-.tcb-endow {
-    padding-top: 31px;
-}
+.tcb-endow {}
 
 .endow-1 {
     position: relative;
@@ -389,6 +400,10 @@
 }
 
 .endow-banner-1 {
+    padding-left: 16px;
+    padding-right: 17px;
+    margin-top: -11px;
+
     img {
         max-width: 100%;
     }
@@ -411,6 +426,29 @@
     background-position: bottom;
     // position: absolute;
     // top: 0;
+}
+
+.btn-endow-1 {
+    display: flex;
+    padding: 0;
+    border: 0;
+    margin-top: 9px;
+    background: transparent;
+
+    &__title {
+        font-family: "SF Pro Display Bold";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    &__icon {
+        height: 15.17px;
+        width: 16px;
+        margin-left: 16px;
+        margin-top: 2px;
+    }
+
 }
 
 // tcb-endow
