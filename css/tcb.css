@@ -702,8 +702,8 @@
   background: transparent;
 }
 
-.accordion-help-1__card:last-child {
-  border-bottom: 0;
+.accordion-help-1__card:nth-child(3) {
+  border-bottom: 0 !important;
 }
 
 .btn-help-1 {
