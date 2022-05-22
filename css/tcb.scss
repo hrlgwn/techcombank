@@ -49,7 +49,8 @@
 
         @media (max-width: 575.98px) {
             padding-left: 20px;
-            margin-top: 51px;
+            margin-top: 48px;
+            margin-bottom: 18px;
 
         }
     }
@@ -57,6 +58,11 @@
     &--help {
         padding-left: 69px;
         margin-bottom: -15px;
+
+        @media (max-width: 575.98px) {
+            padding: 0;
+            margin: 0;
+        }
     }
 
     &__separate {
@@ -76,6 +82,11 @@
 
         &--help {
             letter-spacing: 0px;
+
+            @media (max-width: 575.98px) {
+                margin-top: 30px;
+                margin-left: 22px;
+            }
         }
     }
 
@@ -126,6 +137,85 @@
     &__login {
         width: 169px;
         height: 72px;
+    }
+}
+
+.header-sp {
+    justify-content: space-between;
+    height: 58px;
+
+    &__logo {
+        img {
+            width: 35px;
+            height: 46px;
+            margin-top: 6px;
+            margin-left: 16px;
+        }
+    }
+
+    &__right {
+        display: flex;
+    }
+
+    &__hotline {
+        margin-right: 10px;
+
+    }
+}
+
+.hotline-2 {
+    margin-top: 15px;
+    letter-spacing: 0.4px;
+    margin-bottom: -2px;
+
+    &__title {
+        font-family: "SF Pro Display Bold";
+        font-size: 12px;
+        text-align: right;
+
+        span {
+            font-family: "SF Pro Display Light";
+        }
+    }
+}
+
+.hotline-3 {
+    letter-spacing: 0.4px;
+
+    &__title {
+        font-family: "SF Pro Display Bold";
+        font-size: 12px;
+        text-align: right;
+
+        span {
+            font-family: "SF Pro Display Light";
+        }
+    }
+}
+
+.language-1 {
+    &__title {
+        font-family: "SF Pro Display Regular";
+        font-size: 14px;
+        margin-top: 15px;
+        padding: 0 9.3px;
+    }
+
+    &__icon {
+        height: 4.94px;
+        width: 8px;
+        margin-left: 17px;
+        margin-top: -22px;
+    }
+}
+
+.login-2 {
+    background: #ED1C24;
+    padding: 16px 14px;
+
+    &__icon {
+        width: 16px;
+        height: 16px;
     }
 }
 
@@ -241,6 +331,11 @@
     margin-left: 146px;
     display: flex;
 
+    @media (max-width: 575.98px) {
+        height: 61px;
+        margin-left: 27px;
+    }
+
     &__icon {
         margin-left: 85px;
         margin-top: 21px;
@@ -257,9 +352,12 @@
 
 // features
 .tcb-features {
-    padding-top: 54px;
-    padding-bottom: 49px;
+    padding-top: 45px;
+    padding-bottom: 38px;
+    // 
+    margin-top: 1049px;
 
+    // 
     @media (max-width: 575.98px) {
         padding-top: 25px;
         // padding-left: 29px;
@@ -363,7 +461,7 @@
     padding-bottom: 39px;
 
     @media (max-width: 575.98px) {
-        padding-top: 16px;
+        padding-top: 27px;
         padding-bottom: 5px;
     }
 
@@ -430,10 +528,24 @@
 
 
 // tcb-help
+
+.help-2 {
+    &__img {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
 .tcb-help {
     padding-top: 47px;
     padding-bottom: 84px;
     background: #F5F5F5;
+
+    @media (max-width: 575.98px) {
+        padding-top: 44px;
+
+    }
 }
 
 .container-help-1 {
@@ -457,7 +569,34 @@
     margin-right: 106px;
     margin-top: 6px;
 
+    @media (max-width: 575.98px) {
+        width: 326px;
+        margin: 0;
+        padding-left: 27px;
+        margin-top: 7px;
+
+    }
+
     &__link {
+        &.collapsed {
+            &::after {
+                right: 6px;
+                top: 7px;
+                position: absolute;
+                width: 16px;
+                height: 10px;
+                content: "";
+                background-image: url("../images/accordion-help-5.png");
+                background-repeat: no-repeat;
+                transition: transform .2s ease-in-out;
+
+                @media (max-width: 575.98px) {
+                    right: 24px;
+                    top: 28px;
+                }
+            }
+        }
+
         padding: 0;
         font-family: "SF Pro Display Bold";
         font-size: 16px;
@@ -466,6 +605,31 @@
         color: #000000;
         letter-spacing: -0.3px;
         text-decoration: none;
+        position: relative;
+
+        @media (max-width: 575.98px) {
+            padding-right: 46px;
+            padding-top: 23px;
+            padding-bottom: 32px;
+
+        }
+
+        &::after {
+            right: 6px;
+            top: 7px;
+            position: absolute;
+            width: 16px;
+            height: 10px;
+            content: "";
+            background-image: url("../images/accordion-help-4.png");
+            background-repeat: no-repeat;
+            transition: transform .2s ease-in-out;
+
+            @media (max-width: 575.98px) {
+                right: 24px;
+                top: 28px;
+            }
+        }
 
         &:focus {
             box-shadow: none;
@@ -482,18 +646,32 @@
         padding: 12.5px 0;
         border: 0;
         background: transparent;
+
+        @media (max-width: 575.98px) {
+            padding: 0;
+
+        }
     }
 
     &__body {
         padding: 0;
         padding-top: 4px;
-        padding-bottom: 19px;
+        padding-bottom: 30px;
+
+        @media (max-width: 575.98px) {
+            margin-top: -19px;
+
+        }
     }
 
     &__card {
         border: 0;
         border-bottom: 1px solid #E3E4E6 !important;
         background: transparent;
+
+        &:last-child {
+            border-bottom: 0;
+        }
     }
 }
 
@@ -506,6 +684,11 @@
     width: 160px;
     height: 43px;
     padding: 0;
+
+    @media (max-width: 575.98px) {
+        margin-left: 22px;
+        margin-top: 14px;
+    }
 
     &__title {
         font-family: "SF Pro Display Bold";
@@ -548,6 +731,10 @@
 .endow-1 {
     position: relative;
 
+    @media (max-width: 575.98px) {
+        padding: 0 10px;
+    }
+
     &__list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -556,17 +743,11 @@
 
         @media (max-width: 575.98px) {
             background: #FFFFFF;
-            padding: 0;
             grid-template-columns: repeat(1, 1fr);
             border-radius: 8px;
             grid-gap: 0;
-        }
-    }
-
-    &__item {
-
-        @media (max-width: 575.98px) {
-            padding-top: 21px;
+            padding: 0 36px;
+            padding-right: 16px;
 
         }
     }
@@ -580,6 +761,36 @@
         text-align: left;
         color: #4D4D4D;
         margin-top: 14px;
+
+        &--1 {
+            @media (max-width: 575.98px) {
+
+                margin-top: 13px;
+            }
+        }
+
+        &--2 {
+            @media (max-width: 575.98px) {
+
+                margin-top: 13px;
+            }
+        }
+
+        &--3 {
+            @media (max-width: 575.98px) {
+
+                margin-top: -1px;
+                letter-spacing: -0.3px;
+            }
+        }
+
+        &--4 {
+            @media (max-width: 575.98px) {
+
+                margin-top: 10px;
+            }
+
+        }
     }
 
     &__img {
@@ -589,7 +800,37 @@
     }
 
     &__icon {
-        margin-left: 10px;
+
+        &--1 {
+            @media (max-width: 575.98px) {
+
+                margin-left: 13px;
+                padding-top: 29px;
+            }
+        }
+
+        &--2 {
+            @media (max-width: 575.98px) {
+
+                margin-top: 30px;
+                margin-left: 7px;
+            }
+        }
+
+        &--3 {
+            @media (max-width: 575.98px) {
+
+                margin-top: 31px;
+            }
+        }
+
+        &--4 {
+            @media (max-width: 575.98px) {
+
+                margin-top: 31px;
+                margin-left: 3px;
+            }
+        }
     }
 }
 
@@ -602,6 +843,16 @@
         max-width: 100%;
     }
 }
+
+.endow-banner-2 {
+    margin-top: 79px;
+    padding: 0 9px;
+
+    &__img {
+        max-width: 100%;
+    }
+}
+
 
 .endow-bg-1 {
     background: url(../images/endow-bg-1.png);
@@ -620,6 +871,10 @@
     background-position: bottom;
     // position: absolute;
     // top: 0;
+
+    @media (max-width: 575.98px) {
+        height: auto;
+    }
 }
 
 .btn-endow-1 {
@@ -628,6 +883,11 @@
     border: 0;
     margin-top: 9px;
     background: transparent;
+
+    @media (max-width: 575.98px) {
+        margin-top: 62px;
+        margin-left: 55px;
+    }
 
     &__title {
         font-family: "SF Pro Display Bold";
@@ -652,6 +912,10 @@
     background: #212121;
     padding: 48px 0;
     padding-left: 49px;
+    // 
+    padding-top: 32px;
+    padding-left: 2px;
+    margin-top: 130px;
 }
 
 .footer-logo-1 {
@@ -670,6 +934,12 @@
     display: flex;
     justify-content: end;
     margin-right: 52px;
+
+    @media (max-width: 575.98px) {
+        margin: 0;
+        justify-content: start;
+        margin-bottom: 28px;
+    }
 
     &:hover {
         color: #FFFFFF;
@@ -693,6 +963,12 @@
         justify-content: end;
         margin-top: 23px;
         margin-right: 49px;
+
+        @media (max-width: 575.98px) {
+            margin-top: 33px;
+            justify-content: start;
+            font-size: 14px;
+        }
     }
 
     &__list {
@@ -700,6 +976,12 @@
         justify-content: end;
         margin-right: 47px;
         margin-top: 12px;
+
+        @media (max-width: 575.98px) {
+            justify-content: start;
+            margin-left: -22px;
+            margin-top: 11px;
+        }
     }
 
     &__link {
@@ -734,20 +1016,40 @@
     background: #333333;
     margin-right: 46px;
     margin-top: 48px;
+
+    @media (max-width: 575.98px) {
+        margin-right: 8px;
+        margin-top: 31px;
+    }
 }
 
 .footer-link-1 {
     margin-top: 37px;
     margin-left: 17px;
 
+    @media (max-width: 575.98px) {
+        margin-top: 31px;
+        margin-left: -1px;
+    }
+
     span {
         font-family: "SF Pro Display Regular";
         font-size: 14px;
         color: #A2A2A2;
 
+        @media (max-width: 575.98px) {
+            display: block;
+        }
+
         a {
             color: #A2A2A2;
             margin-left: 29px;
+
+            @media (max-width: 575.98px) {
+                margin-left: 0px;
+                margin-top: 8px;
+                display: block;
+            }
         }
     }
 }

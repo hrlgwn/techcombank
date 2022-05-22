@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header d-none d-sm-block">
         <div class="container header__container tcb-container">
             <div class="header__logo">
                 <a href="#"><img src="./images/logo-1.png" alt=""></a>
@@ -34,8 +34,36 @@
         </div>
     </header>
 
+    <div class="header-sp d-flex d-sm-none">
+        <div class="header-sp__logo">
+            <a href="#"><img src="./images/logo-4.png" alt=""></a>
+        </div>
+        <div class="header-sp__right">
+            <div class="header-sp__hotline">
+                <div class="hotline-2">
+                    <div class="hotline-2__title">
+                        <span>Hỗ trợ 24/7:</span> 1800 6556
+                    </div>
+                </div>
+                <div class="hotline-3">
+                    <div class="hotline-3__title">
+                        +84 247 303 6556
+                    </div>
+                </div>
+            </div>
+            <a href="" class="header-sp__login login-2">
+                <img src="./images/login-2.png" alt="" class="login-2__icon">
+            </a>
+            <div class="header-sp__language language-1">
+                <div class="language-1__title">Eng</div>
+                <img src="./images/language-1.png" alt="" class="language-1__icon">
+            </div>
+        </div>
+    </div>
+
     <section class="tcb-hero">
-        <img src="./images/hero.png" alt="" srcset="">
+        <img src="./images/hero.png" alt="" srcset="" class="d-none d-sm-block">
+        <img src="./images/hero-1.png" alt="" class="d-block d-sm-none">
         <div class="container tcb-container hero-1">
             <div class="row">
                 <div class="col-12">
@@ -153,7 +181,7 @@
     <section class="tcb-endow endow-container">
         <div class="endow-2 d-block d-sm-none">
             <div class="endow-2__img">
-                <img src="./images/endow-5.png" alt="">
+                <img src="./images/endow-6.png" alt="">
             </div>
         </div>
         <div class="container tcb-container">
@@ -161,11 +189,13 @@
                 <div class="col-12">
                     <div class="endow-bg-1"></div>
                     <div class="tcb-header tcb-header--endow">
-                        <div class="tcb-header__title d-none d-sm-block">Ưu đãi trọn đời khi đăng ký gói BusinessOne</div>
+                        <div class="tcb-header__title d-none d-sm-block">Ưu đãi trọn đời khi đăng ký gói BusinessOne
+                        </div>
                         <div class="tcb-header__title d-block d-sm-none">
                             Ưu đãi trọn đời<br>
                             khi đăng ký gói<br>
-                            BusinessOne</div>
+                            BusinessOne
+                        </div>
                     </div>
                     <div class="endow-1">
                         <div class="endow-1__img d-none d-sm-block">
@@ -173,36 +203,54 @@
                         </div>
                         <div class="endow-1__list">
                             <div class="endow-1__item">
-                                <img src="./images/endow-1.png" alt="" class="endow-1__icon">
+                                <img src="./images/endow-1.png" alt="" class="endow-1__icon endow-1__icon--1">
                                 <div class="endow-1__icon">
 
                                 </div>
-                                <div class="endow-1__title">
+                                <div class="endow-1__title d-none d-sm-block">
                                     Tiên phong miễn phí chuyển khoản, an tâm<br>
                                     giao dịch 0đ
                                 </div>
-                            </div>
-                            <div class="endow-1__item">
-                                <img src="./images/endow-2.png" alt="" class="endow-1__icon">
-                                <div class="endow-1__title">
-                                    Ưu đãi lãi suất tiền gửi hấp dẫn, hỗ trợ doanh<br>
-                                    nghiệp bứt phá kinh doanh
+                                <div class="endow-1__title endow-1__title--1 d-block d-sm-none">
+                                    Tiên phong miễn phí chuyển khoản,<br>
+                                    an tâm giao dịch 0đ
                                 </div>
                             </div>
                             <div class="endow-1__item">
-                                <img src="./images/endow-3.png" alt="" class="endow-1__icon">
-                                <div class="endow-1__title">
+                                <img src="./images/endow-2.png" alt="" class="endow-1__icon endow-1__icon--2">
+                                <div class="endow-1__title d-none d-sm-block">
+                                    Ưu đãi lãi suất tiền gửi hấp dẫn, hỗ trợ doanh<br>
+                                    nghiệp bứt phá kinh doanh
+                                </div>
+                                <div class="endow-1__title endow-1__title--2 d-block d-sm-none">
+                                    Ưu đãi lãi suất tiền gửi hấp dẫn, hỗ trợ<br>
+                                    doanh nghiệp bứt phá kinh doanh
+                                </div>
+                            </div>
+                            <div class="endow-1__item">
+                                <img src="./images/endow-3.png" alt="" class="endow-1__icon endow-1__icon--3">
+                                <div class="endow-1__title d-none d-sm-block">
                                     Miễn phí quản lý tài khoản và phí thường niên dịch<br>
                                     vụ Ngân hàng số, giúp doanh nghiệp tiết kiệm<br>
                                     chi phí tối đa
                                 </div>
+                                <div class="endow-1__title endow-1__title--3 d-block d-sm-none">
+                                    Miễn phí quản lý tài khoản và phí thường<br>
+                                    niên dịch vụ Ngân hàng số, giúp doanh<br>
+                                    nghiệp tiết kiệm chi phí tối đa
+                                </div>
                             </div>
                             <div class="endow-1__item">
-                                <img src="./images/endow-4.png" alt="" class="endow-1__icon">
-                                <div class="endow-1__title">
-                                    Hoàn tiền 1% đến 2.000.000 VND/tháng khi<br>
-                                    giao dịch với thẻ ghi nợ quốc tế Techcombank<br>
-                                    Visa doanh nghiệp
+                                <img src="./images/endow-4.png" alt="" class="endow-1__icon endow-1__icon--4">
+                                <div class="endow-1__title d-none d-sm-block">
+                                    Hoàn tiền 1% đến 2.000.000 VND/tháng<br>
+                                    khi giao dịch với thẻ ghi nợ quốc tế<br>
+                                    Techcombank Visa doanh nghiệp
+                                </div>
+                                <div class="endow-1__title endow-1__title--4 d-block d-sm-none">
+                                    Hoàn tiền 1% đến 2.000.000 VND/tháng<br>
+                                    khi giao dịch với thẻ ghi nợ quốc tế <br>
+                                    Techcombank Visa doanh nghiệp
                                 </div>
                             </div>
                             <div class="endow-1__item">
@@ -215,8 +263,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="endow-banner-1">
-                        <img src="./images/endow-banner-1.png" alt="" class="endow-banner-1__img">
+                    <div class="endow-banner-1 d-none d-sm-block">
+                        <img src="./images/endow-banner-1.png" alt="" class="endow-banner-1__img ">
+
+                    </div>
+                    <div class="endow-banner-2 d-block d-sm-none">
+                        <img src="./images/endow-banner-2.png" alt="" class="endow-banner-2__img ">
                     </div>
                 </div>
             </div>
@@ -224,14 +276,30 @@
     </section>
 
     <section class="tcb-help">
+        <div class="help-2 d-block d-sm-none">
+            <div class="help-2__img">
+                <img src="./images/help-6.png" alt="">
+            </div>
+        </div>
         <div class="container tcb-container">
             <div class="row">
                 <div class="col-12">
                     <div class="tcb-header tcb-header--help">
-                        <div class="tcb-header__title tcb-header__title--help">Doanh nghiệp cần trợ giúp?</div>
+                        <div class="tcb-header__title tcb-header__title--help d-none d-sm-block">Doanh nghiệp cần trợ
+                            giúp?</div>
+                        <div class="tcb-header__title tcb-header__title--help d-block d-sm-none">
+                            Doanh nghiệp cần<br>
+                            trợ giúp?
+                        </div>
+                        <button type="button" class="btn btn-help-1 d-flex d-sm-none">
+                            <div class="btn-help-1__title">
+                                Tải bộ câu hỏi
+                            </div>
+                            <img src="./images/btn-help-1.png" alt="" class="btn-help-1__icon">
+                        </button>
                     </div>
                     <div class="container-help-1">
-                        <div class="help-banner-1">
+                        <div class="help-banner-1 d-none d-sm-block">
                             <div class="">
                                 <img src="./images/help-banner-2.png" alt="" class="help-banner-1__img">
                             </div>
@@ -327,7 +395,7 @@
     <footer class="footer">
         <div class="container tcb-container">
             <div class="row">
-                <div class="col-lg-6 col-12">
+                <div class="col-lg-6 col-12 d-none d-sm-block">
                     <div class="footer-logo-1">
                         <img src="./images/logo-3.png" alt="" class="footer-logo-1__img">
                     </div>
@@ -337,6 +405,9 @@
                         <div class="footer-location-1__title">Chi nhánh gần nhất</div>
                         <img src="./images/footer-location-2.png" alt="" class="footer-location-1__icon">
                     </a>
+                    <div class="footer-logo-2">
+                        <img src="./images/logo-5.png" alt="" class="footer-logo-2__img">
+                    </div>
                     <div class="footer-social-1">
                         <div class="footer-social-1__title">
                             Giữ kết nối với Techcombank
@@ -372,7 +443,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="footer-hotline-1">
+                    <div class="footer-hotline-1 d-none d-sm-block">
                         <span class="footer-hotline-1__title">Hotline:</span>
                         <a href="">1800 6556</a>
                         <span class="footer-hotline-1__separate">|</span>
