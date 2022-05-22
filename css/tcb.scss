@@ -29,19 +29,42 @@
     display: flex;
     margin-bottom: 36px;
 
+    @media (max-width: 575.98px) {
+        display: block;
+    }
+
     &--discover {
         padding-left: 65px;
+
+        @media (max-width: 575.98px) {
+            padding-left: 20px;
+
+        }
     }
 
     &--endow {
         margin-bottom: 26px;
         padding-left: 65px;
         margin-top: 31px;
+
+        @media (max-width: 575.98px) {
+            padding-left: 20px;
+            margin-top: 51px;
+
+        }
     }
 
     &--help {
         padding-left: 69px;
         margin-bottom: -15px;
+    }
+
+    &__separate {
+        width: 1px;
+        background: #000000;
+        height: 31px;
+        margin-left: 33px;
+        margin-top: 16px;
     }
 
     &__title {
@@ -56,29 +79,6 @@
         }
     }
 
-    &__subtitle {
-        font-family: "SF Pro Display Bold";
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 24px;
-        margin-top: 21px;
-        margin-left: 28.6px;
-        letter-spacing: 0.1px;
-        color: #000000;
-    }
-
-    &__separate {
-        width: 1px;
-        background: #000000;
-        height: 31px;
-        margin-left: 33px;
-        margin-top: 16px;
-    }
-
-    &__icon {
-        margin-top: 18px;
-        margin-left: 24px;
-    }
 }
 
 // header
@@ -120,6 +120,7 @@
 
     &__hotline {
         align-self: center;
+        margin-right: 46px;
     }
 
     &__login {
@@ -132,11 +133,13 @@
     background: #ED1C24;
     padding: 24px 16px;
 
+    &:hover {
+        text-decoration: none;
+    }
+
     &__title {
-        font-family: "SF Pro Display";
+        font-family: "SF Pro Display Regular";
         font-size: 16px;
-        font-weight: 400;
-        line-height: 21px;
         letter-spacing: 2px;
         text-transform: uppercase;
         color: #FFFFFF;
@@ -145,6 +148,62 @@
     &__icon {
         height: 16px;
         width: 16px;
+        margin-left: 7px;
+        margin-bottom: 5px;
+    }
+}
+
+.hotline-1 {
+    &__link {
+        font-family: "SF Pro Display Bold";
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 0.6px;
+
+        &:hover {
+            text-decoration: none;
+            color: #ED1C24;
+        }
+    }
+
+    &__title {
+        margin-right: 13px;
+    }
+
+    &__separate {
+        margin-right: 15px;
+        margin-left: 13px;
+    }
+}
+
+.btn-header-1 {
+    display: flex;
+
+    @media (max-width: 575.98px) {
+        margin-top: -9px;
+        margin-left: -32px;
+    }
+
+    &__title {
+        font-family: "SF Pro Display Bold";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-top: 21px;
+        margin-left: 28.6px;
+        letter-spacing: 0.1px;
+        color: #000000;
+
+        @media (max-width: 575.98px) {
+            display: block;
+        }
+    }
+
+
+
+    &__icon {
+        margin-top: 18px;
+        margin-left: 24px;
     }
 }
 
@@ -200,20 +259,48 @@
 .tcb-features {
     padding-top: 54px;
     padding-bottom: 49px;
+
+    @media (max-width: 575.98px) {
+        padding-top: 25px;
+        // padding-left: 29px;
+    }
 }
 
 .feature-1 {
     padding-left: 65px;
     padding-right: 42px;
 
+    @media (max-width: 575.98px) {
+        padding: 0;
+    }
+
     &__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 0;
+        padding: 10px;
+
+        @media (max-width: 575.98px) {
+            grid-gap: 16px;
+            overflow-x: auto;
+            grid-gap: 7px;
+            grid-auto-flow: column;
+            grid-auto-columns: calc(100% - 2rem);
+            grid-template-columns: none;
+        }
     }
 
     &__item {
         text-align: center;
+
+        @media (max-width: 575.98px) {
+            height: 341px;
+            width: 280px;
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+            padding-top: 28px;
+
+        }
     }
 
     &__title {
@@ -274,21 +361,44 @@
     background: #F7F6F3;
     padding-top: 51px;
     padding-bottom: 39px;
+
+    @media (max-width: 575.98px) {
+        padding-top: 16px;
+        padding-bottom: 5px;
+    }
+
 }
 
 .discover-1 {
+    @media (max-width: 575.98px) {
+        padding-top: 11px;
+    }
+
     &__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 24px;
         padding-left: 22px;
         padding-right: 31px;
+
+        @media (max-width: 575.98px) {
+            overflow-x: auto;
+            grid-auto-flow: column;
+            grid-auto-columns: calc(100%);
+            grid-template-columns: none;
+            padding: 0;
+        }
+
     }
 
 }
 
 .discover-card-1 {
     height: 424px;
+
+    @media (max-width: 575.98px) {
+        height: auto;
+    }
 
     &__title {
         font-family: "SF Pro Display Semibold";
@@ -427,7 +537,13 @@
 // tcb-help
 
 // tcb-endow
-.tcb-endow {}
+.endow-2 {
+    &__img {
+        img {
+            max-width: 100%;
+        }
+    }
+}
 
 .endow-1 {
     position: relative;
@@ -437,6 +553,22 @@
         grid-template-columns: repeat(2, 1fr);
         padding-left: 612px;
         grid-gap: 43px;
+
+        @media (max-width: 575.98px) {
+            background: #FFFFFF;
+            padding: 0;
+            grid-template-columns: repeat(1, 1fr);
+            border-radius: 8px;
+            grid-gap: 0;
+        }
+    }
+
+    &__item {
+
+        @media (max-width: 575.98px) {
+            padding-top: 21px;
+
+        }
     }
 
     &__title {
@@ -454,6 +586,10 @@
         position: absolute;
         top: 28px;
         left: -15px;
+    }
+
+    &__icon {
+        margin-left: 10px;
     }
 }
 
@@ -592,10 +728,59 @@
         }
     }
 }
+
 .footer-line-1 {
     height: 3px;
     background: #333333;
     margin-right: 46px;
     margin-top: 48px;
 }
+
+.footer-link-1 {
+    margin-top: 37px;
+    margin-left: 17px;
+
+    span {
+        font-family: "SF Pro Display Regular";
+        font-size: 14px;
+        color: #A2A2A2;
+
+        a {
+            color: #A2A2A2;
+            margin-left: 29px;
+        }
+    }
+}
+
+.footer-hotline-1 {
+    display: flex;
+    justify-content: end;
+    margin-right: 53px;
+    margin-top: 9px;
+
+    &__title {
+        font-family: "SF Pro Display Light";
+        font-size: 12px;
+        color: #C4C4C4;
+        text-transform: uppercase;
+        margin-right: 9.7px;
+        letter-spacing: 0.3px;
+    }
+
+    a {
+        font-family: "SF Pro Display Bold";
+        font-size: 12px;
+        color: #C4C4C4;
+        letter-spacing: 0.4px;
+
+    }
+
+    &__separate {
+        font-size: 12px;
+        color: #C4C4C4;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
 // footer
