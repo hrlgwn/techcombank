@@ -635,11 +635,13 @@
   padding-top: 47px;
   padding-bottom: 84px;
   background: #F5F5F5;
+  min-height: 539px;
 }
 
 @media (max-width: 575.98px) {
   .tcb-help {
     padding-top: 44px;
+    min-height: auto;
   }
 }
 
@@ -696,6 +698,7 @@
   letter-spacing: -0.3px;
   text-decoration: none;
   position: relative;
+  padding-right: 10px;
 }
 
 .accordion-help-1__link.collapsed::after {
