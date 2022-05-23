@@ -289,11 +289,18 @@
         }
     }
 
+    &:hover {
+        text-decoration: none;
 
+        .btn-header-1__icon {
+            transform: translateX(-50%);
+        }
+    }
 
     &__icon {
         margin-top: 18px;
         margin-left: 24px;
+        transition: all .3s;
     }
 }
 
@@ -384,6 +391,9 @@
         grid-gap: 0;
         padding: 10px;
 
+
+
+
         @media (max-width: 575.98px) {
             grid-gap: 16px;
             overflow-x: auto;
@@ -391,10 +401,15 @@
             grid-auto-columns: 280px;
             grid-template-columns: none;
         }
+
     }
 
     &__item {
         text-align: center;
+
+        @media (max-width: 1199.98px) {
+            padding: 10px;
+        }
 
         @media (max-width: 575.98px) {
             height: 341px;
@@ -404,6 +419,8 @@
             padding-top: 28px;
 
         }
+
+
     }
 
     &__title {
@@ -600,6 +617,10 @@
     left: -15px;
     top: 55px;
 
+    @media (max-width: 1360px) {
+        display: none !important;
+    }
+
     &__img {
         height: 257px;
         width: 485px;
@@ -611,6 +632,10 @@
     margin-left: auto;
     margin-right: 106px;
     margin-top: 6px;
+
+    @media (max-width: 1360px) {
+        width: 100%;
+    }
 
     @media (max-width: 575.98px) {
         width: 326px;
@@ -713,7 +738,7 @@
         border-bottom: 1px solid #E3E4E6 !important;
         background: transparent;
 
-        &:nth-child(3) {
+        &:nth-last-child(3) {
             border-bottom: 0 !important;
         }
     }
@@ -754,15 +779,25 @@
 .icon-help-1 {
     margin-top: 11px;
     margin-left: 2px;
+    cursor: pointer;
 
     @media (max-width: 575.98px) {
-        margin-top: -12px;
+        // margin-top: -12px;
+        margin-top: 20px;
         text-align: center;
     }
 
     img {
         width: 24px;
         height: 24px;
+        transition: all .3s;
+
+    }
+
+    &:hover {
+        img {
+            transform: translateY(50%);
+        }
     }
 }
 
@@ -790,6 +825,10 @@
         padding-left: 612px;
         grid-gap: 43px;
 
+        @media (max-width: 991.98px) {
+            padding: 0 36px;
+        }
+
         @media (max-width: 575.98px) {
             background: #FFFFFF;
             grid-template-columns: repeat(1, 1fr);
@@ -799,6 +838,9 @@
             padding-right: 16px;
 
         }
+
+
+
     }
 
     &__title {
@@ -918,8 +960,12 @@
     height: 968px;
     background-size: cover;
     background-position: bottom;
+
     // position: absolute;
     // top: 0;
+    @media (max-width: 1199.98px) {
+        height: auto;
+    }
 
     @media (max-width: 575.98px) {
         height: auto;
@@ -950,6 +996,16 @@
         width: 16px;
         margin-left: 16px;
         margin-top: 2px;
+        transition: all .3s;
+
+    }
+
+    &:hover {
+        text-decoration: none;
+
+        .btn-endow-1__icon {
+            transform: translateX(-50%);
+        }
     }
 
 }
@@ -991,6 +1047,7 @@
 
     &:hover {
         color: #FFFFFF;
+        text-decoration: none;
     }
 
     &__icon {
@@ -1143,6 +1200,12 @@
     padding-top: 35px;
     padding-right: 398px;
     padding-bottom: 58px;
+
+    @media (max-width: 1199.98px) {
+        padding-left: 10px;
+        padding-right: 0;
+        padding-top: 25px;
+    }
 
     @media (max-width: 575.98px) {
         padding-left: 10px;
@@ -1421,12 +1484,86 @@
             line-height: 24px;
         }
     }
+
+    &-p3 {
+        width: 569px;
+
+        @media (max-width: 575.98px) {
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+    }
+
+    &-p4 {
+        padding-left: 40px;
+        padding-bottom: 31px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &-p5 {
+        position: relative;
+
+        .alert2-no {
+            width: 29px;
+            height: 29px;
+            border: 1px solid #000000;
+            border-radius: 50%;
+            position: absolute;
+            text-align: center;
+            top: -15px;
+            left: 11px;
+        }
+    }
+
+    &-p6 {
+        height: 165px;
+
+        @media (max-width: 575.98px) {
+            height: auto;
+        }
+    }
+
+    &-p7 {
+        height: 181px;
+
+        @media (max-width: 575.98px) {
+            height: auto;
+        }
+    }
+
+    &-p8 {
+        padding-left: 25px;
+        padding-bottom: 31px;
+    }
+
+    &-p9 {
+        width: 569px;
+        height: 104px;
+        margin-left: 19px;
+
+        @media (max-width: 575.98px) {
+            width: 100%;
+            height: auto;
+            margin: 0;
+
+        }
+    }
+
 }
 
 .container3 {
     // padding-left: 429px;
     width: 1052px;
     margin: auto;
+
+    @media (max-width: 991.98px) {
+        width: 100%;
+    }
 
     @media (max-width: 575.98px) {
         width: 100%;
@@ -1639,5 +1776,195 @@
         padding: 12.6px 18px !important;
         padding-left: 31.3px !important;
         padding-right: 17px !important;
+    }
+}
+
+.btn3 {
+    width: 100%;
+    height: 57px;
+    background: #000000;
+    color: #FFFFFF;
+
+}
+
+.gird2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 45px;
+
+    @media (max-width: 575.98px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    &-item {}
+
+    &-p1 {
+        margin-bottom: 37px;
+    }
+}
+
+
+
+.btn4 {
+    display: flex;
+    height: 56px;
+    width: 291px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 15px 25px;
+    justify-content: space-between;
+    font-family: "SF Pro Display Bold";
+    font-size: 16px;
+    font-weight: 700;
+
+    @media (max-width: 575.98px) {
+        margin: auto;
+        margin-bottom: 34px;
+
+    }
+
+    &__icon {
+        margin-top: 5px;
+    }
+
+    &:hover {
+        background: #000000;
+        color: #fff;
+    }
+
+    &-p1 {
+        margin-top: 47px;
+        margin-left: 16px;
+        margin-bottom: 40px;
+    }
+
+    &-p2 {
+        margin-bottom: 60px;
+        margin-top: 33px;
+    }
+}
+
+.container {
+    &7 {
+        padding-left: 133px;
+        padding-top: 0;
+        padding-right: 122px;
+        padding-bottom: 0;
+
+        @media (max-width: 575.98px) {
+            padding: 0;
+
+        }
+    }
+
+    &8 {
+        padding-top: 28px;
+        padding-bottom: 58px;
+        background: #F3F3F3;
+    }
+
+
+}
+
+.text {
+    &1 {
+        font-family: "SF Pro Display Bold";
+        font-size: 21px;
+        color: #000000;
+
+        &-p1 {
+            margin-left: 17.1px;
+            letter-spacing: 0.3px;
+        }
+    }
+
+    &2 {
+        font-family: "SF Pro Display Regular";
+        font-size: 16px;
+        color: #000000;
+
+        &-p1 {
+            margin-top: 2px;
+            margin-left: 19px;
+        }
+
+        &-p2 {
+            margin-left: 18px;
+            // margin-top: -8px;
+            margin-bottom: 27px;
+            letter-spacing: 0.3px;
+        }
+
+        &-p3 {
+            color: #DE1C24;
+        }
+    }
+}
+
+.accordion {
+    &2 {
+        margin: auto;
+        width: 100%;
+
+        &-p1 {
+            margin-top: 22px;
+
+            >.card {
+                border: 0;
+                background: transparent;
+                border-top: 1px solid #FFFFFF;
+
+                >.card-header {
+                    height: 74px;
+                    padding: 0;
+                    background: transparent;
+                    border: 0;
+
+                    button {
+                        padding: 19px 17px;
+
+                        &::after {
+                            left: 293px;
+                            top: 31px;
+                            position: absolute;
+                            width: 16px;
+                            height: 10px;
+                            content: "";
+                            background-image: url("../images/accordion-help-4.png");
+                            background-repeat: no-repeat;
+                            transition: transform .2s ease-in-out;
+                        }
+
+                        &.collapsed {
+                            &::after {
+                                left: 293px;
+                                top: 31px;
+                                position: absolute;
+                                width: 16px;
+                                height: 10px;
+                                content: "";
+                                background-image: url("../images/accordion-help-5.png");
+                                background-repeat: no-repeat;
+                                transition: transform .2s ease-in-out;
+                            }
+                        }
+
+                        &:focus {
+                            box-shadow: none;
+                            text-decoration: none;
+                        }
+
+                        &:hover {
+                            color: #000000;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .card-body {
+                    padding: 0;
+                }
+            }
+        }
     }
 }

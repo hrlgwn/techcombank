@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/tcb.css">
     <link rel="stylesheet" href="./css/checkbox.css">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="./css/select2.min.css" rel="stylesheet" />
     <title>Hello, world!</title>
 </head>
 
 <body>
-    <header class="header d-none d-sm-block">
+    <header class="header d-none d-lg-block">
         <div class="container header__container tcb-container">
             <div class="header__logo">
                 <a href="#"><img src="./images/logo-1.png" alt=""></a>
@@ -36,7 +36,7 @@
         </div>
     </header>
 
-    <div class="header-sp d-flex d-sm-none">
+    <div class="header-sp d-flex d-lg-none">
         <div class="header-sp__logo">
             <a href="#"><img src="./images/logo-4.png" alt=""></a>
         </div>
@@ -253,40 +253,50 @@
                             <div class="feature-1__item">
                                 <img src="./images/feature-1.png" alt="" class="feature-1__icon">
                                 <div class="feature-1__title feature-1__title--1">Mọi lúc - Mọi nơi</div>
-                                <div class="feature-1__subtitle d-none d-sm-block">
+                                <div class="feature-1__subtitle d-none d-sm-none d-xl-block">
                                     Giao dịch & quản lý hoạt động tài chính thuận tiện,<br>
                                     nhanh chóng trên mọi nền tảng
                                 </div>
-                                <div class="feature-1__subtitle  d-block d-sm-none">
+                                <div class="feature-1__subtitle d-block d-sm-none d-xl-none">
                                     Giao dịch & quản lý hoạt động<br>
                                     tài chính thuận tiện, nhanh<br>
                                     chóng trên mọi nền tảng
+                                </div>
+                                <div class="feature-1__subtitle d-none d-sm-block d-xl-none">
+                                    Giao dịch & quản lý hoạt động tài chính thuận tiện, nhanh chóng trên mọi nền tảng
                                 </div>
                             </div>
                             <div class="feature-1__item">
                                 <img src="./images/feature-2.png" alt="" class="feature-1__icon">
                                 <div class="feature-1__title feature-1__title--2">Ổn định - Bảo mật</div>
-                                <div class="feature-1__subtitle feature-1__subtitle--2 d-none d-sm-block">Tối ưu ổn
+                                <div class="feature-1__subtitle feature-1__subtitle--2 d-none d-sm-none d-xl-block">Tối
+                                    ưu ổn
                                     định, bảo mật nâng cao
                                     (FIDO UAF)<br>
                                     giúp doanh nghiệp an tâm kinh doanh</div>
-                                <div class="feature-1__subtitle  d-block d-sm-none">
+                                <div class="feature-1__subtitle d-block d-sm-none d-xl-none">
                                     Tối ưu ổn định, bảo mật nâng cao <br>
                                     (FIDO UAF) giúp doanh nghiệp an<br>
                                     tâm kinh doanh
+                                </div>
+                                <div class="feature-1__subtitle d-none d-sm-block d-xl-none">
+                                    Tối ưu ổn định, bảo mật nâng cao (FIDO UAF) giúp doanh nghiệp an tâm kinh doanh
                                 </div>
                             </div>
                             <div class="feature-1__item">
                                 <img src="./images/feature-3.png" alt="" class="feature-1__icon feature-1__icon--3">
                                 <div class="feature-1__title feature-1__title--3">Đơn giản - Tối ưu</div>
-                                <div class="feature-1__subtitle d-none d-sm-block">
+                                <div class="feature-1__subtitle d-none d-sm-none d-xl-block">
                                     Thiết kế đơn giản, dễ dàng sử dụng, hỗ trợ<br>
                                     doanh nghiệp quản lý tài chính thuận tiện
                                 </div>
-                                <div class="feature-1__subtitle  d-block d-sm-none">
+                                <div class="feature-1__subtitle d-block d-sm-none d-xl-none">
                                     Thiết kế đơn giản, dễ dàng <br>
                                     sử dụng, hỗ trợ doanh nghiệp quản<br>
                                     lý tài chính thuận tiện
+                                </div>
+                                <div class="feature-1__subtitle d-none d-sm-block d-xl-none">
+                                    Thiết kế đơn giản, dễ dàng sử dụng, hỗ trợ doanh nghiệp quản lý tài chính thuận tiện
                                 </div>
                             </div>
                         </div>
@@ -390,7 +400,7 @@
                         </div>
                     </div>
                     <div class="endow-1">
-                        <div class="endow-1__img d-none d-sm-block">
+                        <div class="endow-1__img d-none d-lg-block">
                             <img src="./images/endow-5.png" alt="">
                         </div>
                         <div class="endow-1__list">
@@ -570,7 +580,172 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="icon-help-1">
+                            <div class="card accordion-help-1__card accordion-help-1__card1" style="display: none;">
+                                <div class="card-header accordion-help-1__header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link btn-block text-left collapsed accordion-help-1__link"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Tôi có thể đăng ký trên nhiều thiết bị di động không? Khi muốn thay đổi
+                                            thiết bị di động, tôi cần phải làm gì?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body accordion-help-1__body">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This
+                                        panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-help-1__card accordion-help-1__card1" style="display: none;">
+                                <div class="card-header accordion-help-1__header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link btn-block text-left collapsed accordion-help-1__link"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Hiện tại tôi đang sử dụng F@st EBank, khi nào thì tôi sẽ được chuyển đổi
+                                            sang Techcombank Business?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body accordion-help-1__body">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This
+                                        panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-help-1__card accordion-help-1__card1" style="display: none;">
+                                <div class="card-header accordion-help-1__header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link btn-block text-left collapsed accordion-help-1__link"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Tôi có thể dùng song song hệ thống F@st EBank và Techcombank Business được
+                                            không?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body accordion-help-1__body">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This
+                                        panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-help-1__card accordion-help-1__card1" style="display: none;">
+                                <div class="card-header accordion-help-1__header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link btn-block text-left collapsed accordion-help-1__link"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Tôi cần làm gì khi không nhận được mã xác thực OTP trên thiết bị di động?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body accordion-help-1__body">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This
+                                        panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-help-1__card accordion-help-1__card1" style="display: none;">
+                                <div class="card-header accordion-help-1__header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link btn-block text-left collapsed accordion-help-1__link"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Tôi có được tạo lệnh chuyển tiền khi tài khoản có số dư khả dụng thấp hơn số
+                                            tiền cần chuyển không?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body accordion-help-1__body">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This
+                                        panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-help-1__card accordion-help-1__card1" style="display: none;">
+                                <div class="card-header accordion-help-1__header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link btn-block text-left collapsed accordion-help-1__link"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Làm thế nào để tôi xác thực giao dịch?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body accordion-help-1__body">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This
+                                        panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-help-1__card accordion-help-1__card1" style="display: none;">
+                                <div class="card-header accordion-help-1__header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link btn-block text-left collapsed accordion-help-1__link"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Tôi cần lưu ý điều gì đối với tiền gửi có kỳ hạn trực tuyến không?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body accordion-help-1__body">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This
+                                        panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-help-1__card accordion-help-1__card1" style="display: none;">
+                                <div class="card-header accordion-help-1__header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link btn-block text-left collapsed accordion-help-1__link"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Tôi có thể quản lý thông tin người thụ hưởng trên Techcombank Business như
+                                            thế nào?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body accordion-help-1__body">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This
+                                        panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon-help-1 js-icon-help-1">
                                 <img src="./images/icon-help-1.png" alt="">
                             </div>
                         </div>
@@ -645,22 +820,10 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.js-business-type').select2({
-                placeholder: "Doanh nghiệp tư nhân",
-            });
-            $('.btn-hero-1').click(function () {
-                // $('.form9').toggle("slide", { direction: "right" }, 1000);
-                $(".form9").animate({
-                    height: "toggle"
-                });
-            });
-        });
-    </script>
+    <script src="./js/select2.min.js"></script>
+    <script src="./js/script.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
