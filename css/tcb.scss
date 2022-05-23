@@ -303,7 +303,7 @@
 .tcb-hero {
     position: relative;
 
-    img {
+    &__img {
         max-width: 100%;
         margin: auto;
     }
@@ -331,6 +331,12 @@
     width: 291px;
     margin-left: 146px;
     display: flex;
+
+    &:hover {
+        background: #000000;
+        border: 1px solid #000000;
+        color: #FFFFFF;
+    }
 
     @media (max-width: 575.98px) {
         height: 61px;
@@ -955,15 +961,15 @@
     background: #212121;
     padding: 48px 0;
     padding-left: 49px;
-    // 
     padding-top: 32px;
-    padding-left: 2px;
+    // padding-left: 2px;
 }
 
 .footer-logo-1 {
     &__img {
         height: 41px;
         width: 288px;
+        margin-top: 17px;
     }
 }
 
@@ -1057,7 +1063,7 @@
     height: 3px;
     background: #333333;
     margin-right: 46px;
-    margin-top: 48px;
+    margin-top: 65px;
 
     @media (max-width: 575.98px) {
         margin-right: 8px;

@@ -322,7 +322,7 @@
   position: relative;
 }
 
-.tcb-hero img {
+.tcb-hero__img {
   max-width: 100%;
   margin: auto;
 }
@@ -349,6 +349,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.btn-hero-1:hover {
+  background: #000000;
+  border: 1px solid #000000;
+  color: #FFFFFF;
 }
 
 @media (max-width: 575.98px) {
@@ -977,12 +983,12 @@
   padding: 48px 0;
   padding-left: 49px;
   padding-top: 32px;
-  padding-left: 2px;
 }
 
 .footer-logo-1__img {
   height: 41px;
   width: 288px;
+  margin-top: 17px;
 }
 
 .footer-location-1 {
@@ -1094,7 +1100,7 @@
   height: 3px;
   background: #333333;
   margin-right: 46px;
-  margin-top: 48px;
+  margin-top: 65px;
 }
 
 @media (max-width: 575.98px) {
