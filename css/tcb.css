@@ -165,6 +165,14 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 53px;
+  position: -webkit-sticky;
+  position: sticky;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+  background: #fff;
+  width: 100%;
+  top: 0;
+  z-index: 8000;
 }
 
 .header-sp__logo img {
@@ -212,6 +220,10 @@
 
 .hotline-3__title span {
   font-family: "SF Pro Display Light";
+}
+
+.language-1 {
+  display: none;
 }
 
 .language-1__title {
@@ -344,17 +356,16 @@
 }
 
 .btn-hero-1 {
-  border-radius: 0;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  margin-bottom: 24px;
+  margin-left: 167px;
+  border-radius: 8px;
   border: 1px solid #FFFFFF;
-  border-bottom: 0;
   font-family: "SF Pro Display Bold";
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
   color: #FFFFFF;
-  height: 58px;
+  height: 61px;
   width: 291px;
   margin-left: 146px;
   display: -webkit-box;
@@ -372,6 +383,7 @@
   .btn-hero-1 {
     height: 61px;
     margin-left: 27px;
+    background: #8C2725;
   }
 }
 
@@ -971,8 +983,10 @@
 }
 
 .endow-banner-2 {
-  margin-top: 79px;
-  padding: 0 9px;
+  margin-left: 9px;
+  margin-right: 9px;
+  padding-top: 79px;
+  background: #ffffff;
 }
 
 .endow-banner-2__img {
@@ -1447,6 +1461,9 @@
           justify-content: end;
   padding-right: 16px;
   margin-top: -2px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form-text-3__cbs .el-radio:last-child {
