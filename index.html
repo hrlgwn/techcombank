@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/tcb.css">
     <link rel="stylesheet" href="./css/checkbox.css">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="./css/select2.min.css" rel="stylesheet" />
     <title>Hello, world!</title>
 </head>
 
 <body>
-    <header class="header d-none d-sm-block">
+    <header class="header d-none d-lg-block">
         <div class="container header__container tcb-container">
             <div class="header__logo">
                 <a href="#"><img src="./images/logo-1.png" alt=""></a>
@@ -36,7 +36,7 @@
         </div>
     </header>
 
-    <div class="header-sp d-flex d-sm-none">
+    <div class="header-sp d-flex d-lg-none">
         <div class="header-sp__logo">
             <a href="#"><img src="./images/logo-4.png" alt=""></a>
         </div>
@@ -80,6 +80,170 @@
         </div>
     </section>
 
+    <section class="tcb-form form9" style="display:none;">
+        <div class="container tcb-container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-1">
+                        <div class="form-text-1">
+                            Để bắt đầu mở tài khoản thanh toán VND, Quý doanh nghiệp vui lòng cung cấp thêm một số thông
+                            tin sau:
+                        </div>
+                        <div class="form-text-2 d-none d-sm-block">
+                            Loại hình doanh nghiệp (theo luật doanh nghiệp Việt Nam)
+                        </div>
+                        <div class="form-text-2 d-block d-sm-none">
+                            Loại hình doanh nghiệp của Công ty?
+                        </div>
+                        <div class="container6">
+                            <div class="select4">
+                                <select class="js-business-type" name="business-type">
+                                    <option></option>
+                                    <option value="congtytnhh">Công ty TNHH</option>
+                                    <option value="congtycophan">Công ty cổ phần</option>
+                                    <option value="doanhnghieptunhan">Doanh nghiệp tư nhân</option>
+                                    <option value="khac">Khác</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-text-4">Có <span>|</span> Không</div>
+                        <div class="form-text-3">
+                            <div class="form-text-3__title">
+                                Doanh nghiệp có nhiều hơn một người đại diện theo pháp luật?
+                            </div>
+                            <div class="form-text-3__cbs">
+                                <div class="el-radio">
+                                    <input type="radio" name="radio1" id="1_1" value="option">
+                                    <label class="el-radio-style" for="1_1"></label>
+                                </div>
+                                <div class="el-radio">
+                                    <input type="radio" name="radio1" id="1_2" value="option">
+                                    <label class="el-radio-style" for="1_2"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-text-3">
+                            <div class="form-text-3__title">
+                                Doanh nghiệp được thành lập tại Hoa Kỳ hoặc có nghĩa vụ nộp thuế cho chính phủ Hoa Kỳ?
+                            </div>
+                            <div class="form-text-3__cbs">
+                                <div class="el-radio">
+                                    <input type="radio" name="radio2" id="2_1" value="option">
+                                    <label class="el-radio-style" for="2_1"></label>
+                                </div>
+                                <div class="el-radio">
+                                    <input type="radio" name="radio2" id="2_2" value="option">
+                                    <label class="el-radio-style" for="2_2"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-text-3">
+                            <div class="form-text-3__title d-none d-sm-block">
+                                Doanh nghiệp đang tham gia một hoặc nhiều thỏa thuận pháp lý về việc ủy quyền cho tổ
+                                chức, cá nhân khác thực hiện các giao dịch liên quan đến tài sản thuộc quyền sở hữu hoặc
+                                quản lý của công ty
+                            </div>
+                            <div class="form-text-3__title d-block d-sm-none">
+                                Doanh nghiệp đang tham gia một hoặc nhiều thỏa thuận pháp lý?
+                            </div>
+                            <div class="form-text-3__cbs">
+                                <div class="el-radio">
+                                    <input type="radio" name="radio3" id="3_1" value="option">
+                                    <label class="el-radio-style" for="3_1"></label>
+                                </div>
+                                <div class="el-radio">
+                                    <input type="radio" name="radio3" id="3_2" value="option">
+                                    <label class="el-radio-style" for="3_2"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-text-3">
+                            <div class="form-text-3__title">
+                                Doanh nghiệp đang hoạt động tại khu chế xuất?
+
+                            </div>
+                            <div class="form-text-3__cbs">
+                                <div class="el-radio">
+                                    <input type="radio" name="radio4" id="4_1" value="option">
+                                    <label class="el-radio-style" for="4_1"></label>
+                                </div>
+                                <div class="el-radio">
+                                    <input type="radio" name="radio4" id="4_2" value="option">
+                                    <label class="el-radio-style" for="4_2"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-text-3">
+                            <div class="form-text-3__title d-none d-sm-block">
+                                Ngoài người đại diện pháp luật và kế toán trưởng, Doanh nghiệp có chủ sở hữu nào khác
+                                đang sở hữu nhiều hơn 25% cổ phần?
+                            </div>
+                            <div class="form-text-3__title d-block d-sm-none">
+                                Ngoài người đại diện pháp luật và kế toán trưởng, Doanh nghiệp có chủ sở hữu nào khác
+                                đang sở hữu nhiều hơn 25% cổ phần hoặc nắm quyền kiểm soát doanh nghiệp?
+
+                            </div>
+                            <div class="form-text-3__cbs">
+                                <div class="el-radio">
+                                    <input type="radio" name="radio5" id="5_1" value="option">
+                                    <label class="el-radio-style" for="5_1"></label>
+                                </div>
+                                <div class="el-radio">
+                                    <input type="radio" name="radio5" id="5_2" value="option">
+                                    <label class="el-radio-style" for="5_2"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-text-3 d-none d-sm-block">
+                            <div class="form-text-3__title ">
+                                Doanh nghiệp có yếu tố nước ngoài? (công ty FDI/chi nhánh/văn phòng đại diện nước ngoài,
+                                người đại diện pháp luật hoặc kế toán trưởng là người nước ngoài...)?
+                            </div>
+                            <div class="form-text-3__cbs">
+                                <div class="el-radio">
+                                    <input type="radio" name="radio6" id="6_1" value="option">
+                                    <label class="el-radio-style" for="6_1"></label>
+                                </div>
+                                <div class="el-radio">
+                                    <input type="radio" name="radio6" id="6_2" value="option">
+                                    <label class="el-radio-style" for="6_2"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-text-3">
+                            <div class="form-text-3__title">
+                                Doanh nghiệp có chữ ký số còn hiệu lực?
+
+                            </div>
+                            <div class="form-text-3__cbs">
+                                <div class="el-radio">
+                                    <input type="radio" name="radio7" id="7_1" value="option">
+                                    <label class="el-radio-style" for="7_1"></label>
+                                </div>
+                                <div class="el-radio">
+                                    <input type="radio" name="radio7" id="7_2" value="option">
+                                    <label class="el-radio-style" for="7_2"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-1">
+                            <div class="btn-1__title">Tiếp tục</div>
+                            <img src="./images/btn-1.png" alt="" class="btn-1__icon">
+                        </button>
+
+                        <div class="form-text-5 d-block d-sm-none">
+                            <div class="form-text-5__line"></div>
+                            <div class="form-text-5__note">
+                                * Thỏa thuận mà trong đó ủy quyền cho tổ chức, cá nhân khác thực hiện các giao dịch liên
+                                quan đến tài sản thuộc quyền sở hữu hoặc quản lý của công ty.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="tcb-features">
         <div class="container tcb-container">
             <div class="row">
@@ -89,40 +253,50 @@
                             <div class="feature-1__item">
                                 <img src="./images/feature-1.png" alt="" class="feature-1__icon">
                                 <div class="feature-1__title feature-1__title--1">Mọi lúc - Mọi nơi</div>
-                                <div class="feature-1__subtitle d-none d-sm-block">
+                                <div class="feature-1__subtitle d-none d-sm-none d-xl-block">
                                     Giao dịch & quản lý hoạt động tài chính thuận tiện,<br>
                                     nhanh chóng trên mọi nền tảng
                                 </div>
-                                <div class="feature-1__subtitle  d-block d-sm-none">
+                                <div class="feature-1__subtitle d-block d-sm-none d-xl-none">
                                     Giao dịch & quản lý hoạt động<br>
                                     tài chính thuận tiện, nhanh<br>
                                     chóng trên mọi nền tảng
+                                </div>
+                                <div class="feature-1__subtitle d-none d-sm-block d-xl-none">
+                                    Giao dịch & quản lý hoạt động tài chính thuận tiện, nhanh chóng trên mọi nền tảng
                                 </div>
                             </div>
                             <div class="feature-1__item">
                                 <img src="./images/feature-2.png" alt="" class="feature-1__icon">
                                 <div class="feature-1__title feature-1__title--2">Ổn định - Bảo mật</div>
-                                <div class="feature-1__subtitle feature-1__subtitle--2 d-none d-sm-block">Tối ưu ổn
+                                <div class="feature-1__subtitle feature-1__subtitle--2 d-none d-sm-none d-xl-block">Tối
+                                    ưu ổn
                                     định, bảo mật nâng cao
                                     (FIDO UAF)<br>
                                     giúp doanh nghiệp an tâm kinh doanh</div>
-                                <div class="feature-1__subtitle  d-block d-sm-none">
+                                <div class="feature-1__subtitle d-block d-sm-none d-xl-none">
                                     Tối ưu ổn định, bảo mật nâng cao <br>
                                     (FIDO UAF) giúp doanh nghiệp an<br>
                                     tâm kinh doanh
+                                </div>
+                                <div class="feature-1__subtitle d-none d-sm-block d-xl-none">
+                                    Tối ưu ổn định, bảo mật nâng cao (FIDO UAF) giúp doanh nghiệp an tâm kinh doanh
                                 </div>
                             </div>
                             <div class="feature-1__item">
                                 <img src="./images/feature-3.png" alt="" class="feature-1__icon feature-1__icon--3">
                                 <div class="feature-1__title feature-1__title--3">Đơn giản - Tối ưu</div>
-                                <div class="feature-1__subtitle d-none d-sm-block">
+                                <div class="feature-1__subtitle d-none d-sm-none d-xl-block">
                                     Thiết kế đơn giản, dễ dàng sử dụng, hỗ trợ<br>
                                     doanh nghiệp quản lý tài chính thuận tiện
                                 </div>
-                                <div class="feature-1__subtitle  d-block d-sm-none">
+                                <div class="feature-1__subtitle d-block d-sm-none d-xl-none">
                                     Thiết kế đơn giản, dễ dàng <br>
                                     sử dụng, hỗ trợ doanh nghiệp quản<br>
                                     lý tài chính thuận tiện
+                                </div>
+                                <div class="feature-1__subtitle d-none d-sm-block d-xl-none">
+                                    Thiết kế đơn giản, dễ dàng sử dụng, hỗ trợ doanh nghiệp quản lý tài chính thuận tiện
                                 </div>
                             </div>
                         </div>
@@ -226,7 +400,7 @@
                         </div>
                     </div>
                     <div class="endow-1">
-                        <div class="endow-1__img d-none d-sm-block">
+                        <div class="endow-1__img d-none d-lg-block">
                             <img src="./images/endow-5.png" alt="">
                         </div>
                         <div class="endow-1__list">
@@ -406,7 +580,172 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="icon-help-1">
+                            <div class="card accordion-help-1__card accordion-help-1__card1" style="display: none;">
+                                <div class="card-header accordion-help-1__header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link btn-block text-left collapsed accordion-help-1__link"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Tôi có thể đăng ký trên nhiều thiết bị di động không? Khi muốn thay đổi
+                                            thiết bị di động, tôi cần phải làm gì?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body accordion-help-1__body">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This
+                                        panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-help-1__card accordion-help-1__card1" style="display: none;">
+                                <div class="card-header accordion-help-1__header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link btn-block text-left collapsed accordion-help-1__link"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Hiện tại tôi đang sử dụng F@st EBank, khi nào thì tôi sẽ được chuyển đổi
+                                            sang Techcombank Business?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body accordion-help-1__body">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This
+                                        panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-help-1__card accordion-help-1__card1" style="display: none;">
+                                <div class="card-header accordion-help-1__header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link btn-block text-left collapsed accordion-help-1__link"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Tôi có thể dùng song song hệ thống F@st EBank và Techcombank Business được
+                                            không?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body accordion-help-1__body">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This
+                                        panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-help-1__card accordion-help-1__card1" style="display: none;">
+                                <div class="card-header accordion-help-1__header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link btn-block text-left collapsed accordion-help-1__link"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Tôi cần làm gì khi không nhận được mã xác thực OTP trên thiết bị di động?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body accordion-help-1__body">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This
+                                        panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-help-1__card accordion-help-1__card1" style="display: none;">
+                                <div class="card-header accordion-help-1__header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link btn-block text-left collapsed accordion-help-1__link"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Tôi có được tạo lệnh chuyển tiền khi tài khoản có số dư khả dụng thấp hơn số
+                                            tiền cần chuyển không?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body accordion-help-1__body">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This
+                                        panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-help-1__card accordion-help-1__card1" style="display: none;">
+                                <div class="card-header accordion-help-1__header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link btn-block text-left collapsed accordion-help-1__link"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Làm thế nào để tôi xác thực giao dịch?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body accordion-help-1__body">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This
+                                        panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-help-1__card accordion-help-1__card1" style="display: none;">
+                                <div class="card-header accordion-help-1__header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link btn-block text-left collapsed accordion-help-1__link"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Tôi cần lưu ý điều gì đối với tiền gửi có kỳ hạn trực tuyến không?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body accordion-help-1__body">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This
+                                        panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card accordion-help-1__card accordion-help-1__card1" style="display: none;">
+                                <div class="card-header accordion-help-1__header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="btn btn-link btn-block text-left collapsed accordion-help-1__link"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Tôi có thể quản lý thông tin người thụ hưởng trên Techcombank Business như
+                                            thế nào?
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body accordion-help-1__body">
+                                        And lastly, the placeholder content for the third and final accordion panel.
+                                        This
+                                        panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon-help-1 js-icon-help-1">
                                 <img src="./images/icon-help-1.png" alt="">
                             </div>
                         </div>
@@ -481,18 +820,10 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.js-business-type').select2({
-                placeholder: "Doanh nghiệp tư nhân",
-            });
-        });
-    </script>
+    <script src="./js/select2.min.js"></script>
+    <script src="./js/script.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
