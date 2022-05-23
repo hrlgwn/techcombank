@@ -812,6 +812,17 @@
   width: 18px;
   margin-top: 9px;
   margin-left: 13px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn-help-1:hover {
+  text-decoration: none;
+}
+
+.btn-help-1:hover .btn-help-1__icon {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
 }
 
 .icon-help-1 {

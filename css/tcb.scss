@@ -773,6 +773,15 @@
         width: 18px;
         margin-top: 9px;
         margin-left: 13px;
+        transition: all .3s;
+
+    }
+
+    &:hover {
+        text-decoration: none;
+        .btn-help-1__icon {
+            transform: translateY(20%);
+        }
     }
 }
 
