@@ -25,8 +25,8 @@ $(document).ready(function () {
             height: "toggle"
         });
     });
-    $('.accordion .collapse').on('shown.bs.collapse', function (e) {
-        var $panel = $(this).closest('.accordion .card');
+    $('.accordion2 .collapse').on('shown.bs.collapse', function (e) {
+        var $panel = $(this).closest('.accordion2 .card');
         $('html,body').animate({
             scrollTop: $panel.offset().top - 80
         }, 500);
