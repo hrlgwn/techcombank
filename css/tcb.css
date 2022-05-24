@@ -383,7 +383,7 @@
   .btn-hero-1 {
     height: 61px;
     margin-left: 27px;
-    background: #8C2725;
+    background: transparent;
   }
 }
 
@@ -407,11 +407,6 @@
   .tcb-features {
     padding-top: 25px;
   }
-}
-
-.feature-1 {
-  padding-left: 65px;
-  padding-right: 42px;
 }
 
 @media (max-width: 575.98px) {
@@ -444,6 +439,16 @@
   text-align: center;
 }
 
+.feature-1__item:hover .feature-1__title::after {
+  content: "";
+  height: 1px;
+  background: #DE1C24;
+  width: 43px;
+  position: absolute;
+  left: calc(50% - 21.5px);
+  bottom: -9px;
+}
+
 @media (max-width: 1199.98px) {
   .feature-1__item {
     padding: 10px;
@@ -465,6 +470,9 @@
   font-family: "SF Pro Display Regular";
   font-size: 24px;
   font-weight: 400;
+  position: relative;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .feature-1__title--1 {
@@ -476,17 +484,6 @@
   margin-top: 3px;
   margin-bottom: 19px;
   position: relative;
-  margin-left: -15px;
-}
-
-.feature-1__title--2::after {
-  content: "";
-  height: 1px;
-  background: #DE1C24;
-  width: 43px;
-  position: absolute;
-  left: calc(50% - 21.5px);
-  bottom: -9px;
 }
 
 .feature-1__title--3 {
@@ -526,6 +523,10 @@
   .discover-1 {
     padding-top: 11px;
   }
+}
+
+.discover-1__item {
+  background: #ffff;
 }
 
 .discover-1__list {
@@ -596,6 +597,12 @@
   transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
 }
 
+@media (max-width: 1360px) {
+  .discover-card-1 {
+    height: auto;
+  }
+}
+
 @media (max-width: 575.98px) {
   .discover-card-1 {
     height: auto;
@@ -604,7 +611,7 @@
 
 .discover-card-1__title {
   font-family: "SF Pro Display Semibold";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 21px;
   letter-spacing: 1px;
@@ -781,6 +788,35 @@
   padding-top: 4px;
   padding-bottom: 19px;
   letter-spacing: -0.5px;
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  color: #4D4D4D;
+}
+
+.accordion-help-1__body a {
+  color: #de1c24;
+  position: relative;
+  background-size: 0% 1px;
+  background-position: 0 calc(100% + 1px);
+  display: inline;
+  border-bottom: 1px solid transparent;
+  background-repeat: no-repeat;
+  -webkit-transition: all .4s ease-in 0s;
+  transition: all .4s ease-in 0s;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#DE1C24), to(#DE1C24));
+  background-image: linear-gradient(#DE1C24, #DE1C24);
+  text-decoration: none;
+}
+
+.accordion-help-1__body a:hover {
+  background-size: 100% 1px !important;
+}
+
+.accordion-help-1__body ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 0;
 }
 
 .accordion-help-1__card {

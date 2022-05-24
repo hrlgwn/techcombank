@@ -10,7 +10,7 @@ $(document).ready(function () {
         placeholder: "Tỉnh / Thành phố",
     });
     $('.js-icon-help-1').click(function () {
-        $(".accordion-help-1__card1").toggle(1000);
+        $(".accordion-help-1__card1").slideToggle("slow");
         if ($(".js-icon-help-1").hasClass("show")) {
             $(".js-icon-help-1").removeClass("show")
             $('.js-icon-help-1 img').attr("src", "./images/icon-help-1.png");
@@ -25,4 +25,11 @@ $(document).ready(function () {
             height: "toggle"
         });
     });
+    $('.accordion .collapse').on('shown.bs.collapse', function (e) {
+        var $panel = $(this).closest('.accordion .card');
+        $('html,body').animate({
+            scrollTop: $panel.offset().top - 50
+        }, 500);
+    });
+
 });
