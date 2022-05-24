@@ -28,7 +28,7 @@ $(document).ready(function () {
     $('.accordion .collapse').on('shown.bs.collapse', function (e) {
         var $panel = $(this).closest('.accordion .card');
         $('html,body').animate({
-            scrollTop: $panel.offset().top - 50
+            scrollTop: $panel.offset().top - 80
         }, 500);
     });
 
