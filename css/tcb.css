@@ -345,6 +345,21 @@
 
 .tcb-hero {
   position: relative;
+  background: url(../images/bg-hero.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.tcb-hero__container {
+  width: 1223px;
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.tcb-hero__img2 {
+  max-width: 100%;
+  width: 100%;
 }
 
 .tcb-hero__img {
@@ -352,14 +367,7 @@
   margin: auto;
 }
 
-.hero-1 {
-  position: absolute;
-  bottom: 0;
-}
-
 .btn-hero-1 {
-  margin-bottom: 24px;
-  margin-left: 167px;
   border-radius: 8px;
   border: 1px solid #FFFFFF;
   font-family: "SF Pro Display Bold";
@@ -367,18 +375,31 @@
   font-weight: 700;
   line-height: 24px;
   color: #FFFFFF;
-  height: 61px;
   width: 291px;
-  margin-left: 146px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  bottom: 31px;
+  padding: 17.5px 23px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .btn-hero-1:hover {
   background: #000000;
   border: 1px solid #000000;
   color: #FFFFFF;
+}
+
+@media (max-width: 991.98px) {
+  .btn-hero-1 {
+    width: auto;
+    padding: 9.5px 13px;
+    margin-bottom: 0;
+    bottom: 18px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -390,14 +411,14 @@
 }
 
 .btn-hero-1__icon {
-  margin-left: 85px;
-  margin-top: 21px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .btn-hero-1__title {
-  margin-top: 12px;
-  margin-left: 11px;
   letter-spacing: 0.3px;
+  padding-right: 10px;
 }
 
 .tcb-features {
