@@ -1845,6 +1845,12 @@
   background: #F3F3F3;
 }
 
+@media (max-width: 575.98px) {
+  .step2 {
+    padding-bottom: 23px;
+  }
+}
+
 .form2 {
   display: -ms-grid;
   display: grid;

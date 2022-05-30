@@ -1788,6 +1788,10 @@
     padding-top: 34px;
     padding-bottom: 58px;
     background: #F3F3F3;
+
+    @media (max-width: 575.98px) {
+        padding-bottom: 23px;
+    }
 }
 
 .form2 {
