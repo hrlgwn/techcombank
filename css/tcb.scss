@@ -2286,3 +2286,29 @@
         color: #000;
     }
 }
+
+.discover2 {
+    position: relative;
+
+    .owl-dots {
+        position: absolute;
+        top: -30px;
+        width: 100%;
+        margin: 0 !important;
+
+        .owl-dot {
+            span {
+
+                background: #D6D6D6 !important;
+                width: 4px !important;
+                height: 4px !important;
+            }
+        }
+
+        .owl-dot.active {
+            span {
+                background: #ED1C24 !important;
+            }
+        }
+    }
+}

@@ -36,6 +36,40 @@ $(document).ready(function () {
         //html works for FFX but not Chrome
         //body works for Chrome but not FFX
         //This strange selector seems to work universally
-        $("html, body").animate({scrollTop: 0}, 1000);
-     });
+        $("html, body").animate({
+            scrollTop: 0
+        }, 1000);
+    });
+    $(".discover2 .owl-carousel").owlCarousel({
+        margin: 24,
+        responsive: {
+            0: {
+                items: 1,
+                dots: true
+            },
+            480: {
+                items: 3,
+            },
+            768: {
+                items: 3,
+                dots: true
+            }
+        }
+    });
+    $(".gird3 .owl-carousel").owlCarousel({
+        margin: 6,
+        responsive: {
+            0: {
+                items: 1,
+                dots: true
+            },
+            480: {
+                items: 3,
+            },
+            768: {
+                items: 3,
+                dots: true
+            }
+        }
+    });
 });
