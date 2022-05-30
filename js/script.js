@@ -58,9 +58,11 @@ $(document).ready(function () {
     });
     $(".gird3 .owl-carousel").owlCarousel({
         margin: 6,
+        autoWidth: true,
+        autoHeight: true,
         responsive: {
             0: {
-                items: 1,
+                items: 2,
                 dots: true
             },
             480: {
