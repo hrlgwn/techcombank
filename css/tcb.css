@@ -1545,6 +1545,10 @@
   }
 }
 
+.form-text-3__title span {
+  color: #ED1C24;
+}
+
 .form-text-3__cbs {
   display: -webkit-box;
   display: -ms-flexbox;
