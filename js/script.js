@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    var step = 1;
     $('.js-business-type').select2({
         placeholder: "Doanh nghiệp tư nhân",
     });
@@ -21,9 +22,26 @@ $(document).ready(function () {
     });
     $('.btn-hero-1').click(function () {
         // $('.form9').toggle("slide", { direction: "right" }, 1000);
-        $(".form9").animate({
+        $(".form10").animate({
             height: "toggle"
         });
+    });
+    $('#btn-step').click(function () {
+        // $('.form9').toggle("slide", { direction: "right" }, 1000);
+        if (step == 1) {
+            $("#step").animate({
+                height: "toggle"
+            });
+        } else if (step == 2) {
+            $("#steponline").animate({
+                height: "toggle"
+            });
+        } else if (step == 3) {
+            $("#stepoffline").animate({
+                height: "toggle"
+            });
+        }
+
     });
     $('.accordion2 .collapse').on('shown.bs.collapse', function (e) {
         var $panel = $(this).closest('.accordion2 .card');
@@ -72,6 +90,22 @@ $(document).ready(function () {
                 items: 3,
                 dots: true
             }
+        }
+    });
+
+    $("#step1").click(function () {
+        // if($("#business-type").select2('val'))
+        var businessType = $("#business-type").select2('val');
+        if (businessType == 'khac') {
+            $("#steponline").hide();
+            $("#stepoffline").show();
+            $("#step").hide();
+            step = 3;
+        } else {
+            $("#steponline").show();
+            $("#stepoffline").hide();
+            $("#step").hide();
+            step = 2;
         }
     });
 });
