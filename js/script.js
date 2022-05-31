@@ -108,4 +108,18 @@ $(document).ready(function () {
             step = 2;
         }
     });
+    window.onscroll = function () {
+        scrollFunction()
+    };
+    // khai báo hàm scrollFunction
+    function scrollFunction() {
+        // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            //nếu lớn hơn 20px thì hiện button
+            document.getElementById("btn-back-to-top").style.opacity = 1;
+        } else {
+            //nếu nhỏ hơn 20px thì ẩn button
+            document.getElementById("btn-back-to-top").style.opacity = 0;
+        }
+    }
 });
