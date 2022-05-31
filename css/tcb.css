@@ -2246,6 +2246,7 @@
   right: 20px;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
+  z-index: 1;
 }
 
 .btn-back:hover {

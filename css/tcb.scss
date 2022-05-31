@@ -2200,6 +2200,7 @@
         bottom: 20px;
         right: 20px;
         transition: all .25s ease-in-out;
+        z-index: 1;
 
         &:hover {
             transform: translateY(-5px) translateZ(0px);
