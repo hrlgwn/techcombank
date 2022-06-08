@@ -726,6 +726,7 @@
     margin: 0;
     padding-left: 0;
     margin-top: 7px;
+    width: 100%;
   }
 }
 
@@ -1050,11 +1051,31 @@
 .endow-banner-1 {
   padding-left: 16px;
   padding-right: 17px;
-  margin-top: -11px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.endow-banner-1 span {
+  color: #FFE282;
 }
 
 .endow-banner-1 img {
   max-width: 100%;
+}
+
+.endow-banner-1__link {
+  position: absolute;
+  font-family: "SF Pro Display Regular";
+  font-size: 14px;
+  color: #fff;
+  bottom: 15px;
+  right: 61px;
+  width: 426px;
+}
+
+.endow-banner-1__link a {
+  text-decoration: underline;
+  color: #fff;
 }
 
 .endow-banner-2 {
@@ -1062,10 +1083,30 @@
   margin-right: 9px;
   padding-top: 79px;
   background: #ffffff;
+  position: relative;
+}
+
+.endow-banner-2 span {
+  color: #FFE282;
 }
 
 .endow-banner-2__img {
   max-width: 100%;
+}
+
+.endow-banner-2__link {
+  position: absolute;
+  font-family: "SF Pro Display Regular";
+  font-size: 9px;
+  color: #fff;
+  bottom: 15px;
+  left: 31px;
+  width: 131px;
+}
+
+.endow-banner-2__link a {
+  text-decoration: underline;
+  color: #fff;
 }
 
 .endow-bg-1 {
@@ -1608,7 +1649,6 @@
 
 @media (max-width: 575.98px) {
   .btn-1 {
-    margin: auto;
     margin-bottom: 34px;
   }
 }
@@ -2096,8 +2136,8 @@
 }
 
 .btn4-p1 {
-  margin-top: 47px;
-  margin-left: 16px;
+  margin-top: 10px;
+  margin-left: 0;
   margin-bottom: 40px;
 }
 
@@ -2475,5 +2515,37 @@
 
 .app1-techcombank-phone-android img {
   width: 101.86px;
+}
+
+.more1 {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  color: #616161;
+  text-decoration: underline;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+@media (max-width: 575.98px) {
+  .more1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.more2 {
+  font-family: "SF Pro Display Regular";
+  font-size: 16px;
+  color: #616161;
+  text-decoration: underline;
+  display: block;
+}
+
+@media (max-width: 575.98px) {
+  .more2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=tcb.css.map */
