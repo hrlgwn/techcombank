@@ -2495,13 +2495,22 @@
 }
 
 .more1 {
-    font-family: "SF Pro Display Regular";
-    font-size: 16px;
-    color: #616161;
-    text-decoration: underline;
+
     margin-top: 30px;
     margin-bottom: 30px;
-    display: block;
+
+    // display: block;
+    &__link {
+        font-family: "SF Pro Display Regular";
+        font-size: 16px;
+        color: #616161;
+        text-decoration: underline;
+
+        &:hover {
+            color: #ED1C24;
+        }
+    }
+
 
     @media (max-width: 575.98px) {
         margin-top: 10px;
@@ -2510,11 +2519,22 @@
 }
 
 .more2 {
-    font-family: "SF Pro Display Regular";
-    font-size: 16px;
-    color: #616161;
-    text-decoration: underline;
-    display: block;
+
+    // display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+    &__link {
+        font-family: "SF Pro Display Regular";
+        font-size: 16px;
+        color: #616161;
+        text-decoration: underline;
+
+        &:hover {
+            color: #ED1C24;
+        }
+
+    }
 
     @media (max-width: 575.98px) {
         margin-top: 10px;

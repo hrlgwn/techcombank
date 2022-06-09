@@ -2518,13 +2518,19 @@
 }
 
 .more1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.more1__link {
   font-family: "SF Pro Display Regular";
   font-size: 16px;
   color: #616161;
   text-decoration: underline;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: block;
+}
+
+.more1__link:hover {
+  color: #ED1C24;
 }
 
 @media (max-width: 575.98px) {
@@ -2535,11 +2541,19 @@
 }
 
 .more2 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.more2__link {
   font-family: "SF Pro Display Regular";
   font-size: 16px;
   color: #616161;
   text-decoration: underline;
-  display: block;
+}
+
+.more2__link:hover {
+  color: #ED1C24;
 }
 
 @media (max-width: 575.98px) {
